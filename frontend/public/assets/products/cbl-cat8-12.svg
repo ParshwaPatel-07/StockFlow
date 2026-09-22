@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="20" fill="#0F172A"/>
+  <!-- Cable loops -->
+  <path d="M26 64C26 38 74 38 74 64C74 80 34 80 34 50C34 26 66 26 66 50" stroke="#0284C7" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Gold connector -->
+  <rect x="60" y="46" width="12" height="18" rx="2" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
+</svg>

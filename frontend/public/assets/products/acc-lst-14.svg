@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="20" fill="#0F172A"/>
+  <!-- Stand base & riser plate -->
+  <path d="M22 74L40 74L76 40L64 36L34 66L22 66Z" fill="#475569" stroke="#94A3B8" stroke-width="1.5"/>
+  <!-- Laptop resting ledge -->
+  <path d="M74 38L78 44" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="20" fill="#0F172A"/>
+  <!-- Mouse body -->
+  <path d="M50 18C36 18 30 30 30 50C30 70 38 82 50 82C62 82 70 70 70 50C70 30 64 18 50 18Z" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+  <!-- Left/Right button split -->
+  <line x1="50" y1="20" x2="50" y2="45" stroke="#334155" stroke-width="1.5"/>
+  <!-- Scroll wheel -->
+  <rect x="47" y="26" width="6" height="14" rx="3" fill="#38BDF8"/>
+  <!-- Thumb flare -->
+  <path d="M31 46C24 50 24 64 32 70" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+</svg>

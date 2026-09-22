@@ -1,0 +1,46 @@
+# =============================================================================
+# StockFlow — Render Blueprint Specification (100% Free Tier Architecture)
+# Automatically deploys:
+#   1. FastAPI Backend Web Service (Free Tier)
+#   2. React + Vite Frontend Static Site (Free Tier)
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # 1. FastAPI + WebSocket Backend Web Service
+  # ---------------------------------------------------------------------------
+  - type: web
+    name: stockflow-backend
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn app.main:app --app-dir backend/app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.11.9
+
+  # ---------------------------------------------------------------------------
+  # 2. React + Vite Frontend Static Site
+  # ---------------------------------------------------------------------------
+  - type: web
+    name: stockflow-frontend
+    runtime: static
+    plan: free
+    region: oregon
+    rootDir: frontend
+    buildCommand: npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        sync: false
+      - key: VITE_WS_URL
+        sync: false
