@@ -31,7 +31,6 @@ services:
     name: stockflow-frontend
     runtime: static
     plan: free
-    region: oregon
     rootDir: frontend
     buildCommand: npm run build
     staticPublishPath: dist
