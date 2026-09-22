@@ -30,7 +30,6 @@ services:
   - type: web
     name: stockflow-frontend
     runtime: static
-    plan: free
     rootDir: frontend
     buildCommand: npm run build
     staticPublishPath: dist
